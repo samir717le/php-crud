@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
         echo '<td>' . $row['firstname'] . '</td>';
         echo '<td>' . $row['lastname'] . '</td>';
         echo '<td>' . $row['email'] . '</td>';
-        echo '<td> <a href="delete.php/?id=' . $row["id"] . '" class="btn btn-primary">Delete</a> </td>';
+        echo '<td> <a href="delete.php/?id=' . $row["id"] . '" class="btn btn-primary">Delete</a> <a href="edit.php/?id=' . $row["id"] . '" class="btn btn-primary">Edit</a> </td>';
         echo '</tr>';
     }
 } else {
